@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">AI Mashishi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">AI Mashishi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+             <li><a href="#about" onclick="toggleMenu()">About</a></li>
+             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile-pic-container">
+            <img src="./assests/pro-pic2.jpg" alt="Amogelang Mashishi profile picture">
+        </div>
+        <div class="section-text">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="title">Amogelang Mashishi</h1>
+            <p class="job-title">Frontend developer</p>
+            <div class="btn">
+                <button class="btn btn-btn" onclick="window.open('https://docs.google.com/document/d/1XCmgX4wsN_3wOKWyqbe4kUR4Pn_V5uxM/edit?usp=sharing&ouid=110655999090265708188&rtpof=true&sd=true')">View CV</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
