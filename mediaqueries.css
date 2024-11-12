@@ -1,4 +1,91 @@
-@media screen and (max-width: 1000px){
+/* Base Styling for smaller screens */
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    /* Tablet: Reduce font sizes and adjust layout */
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+    .profile-pic, .about-pic {
+        width: 350px;
+    }
+    .projects-container {
+        gap: 10px;
+    }
+    .project-img-container {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile: Stack items vertically, reduce spacing */
+    #desktop-nav {
+        display: none; /* Hide desktop nav */
+    }
+    #hamburger-nav {
+        display: block; /* Show hamburger menu */
+    }
+
+    /* Profile Section */
+    .profile-pic {
+        width: 80%;
+    }
+    .section-text h1.title {
+        font-size: 2.5rem;
+    }
+    .section-text .greeting,
+    .section-text .job-title {
+        font-size: 1.8rem;
+    }
+
+    /* About Section */
+    .about-details-container {
+        margin: 0 1rem;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .project-img-container {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    .contact-me-container {
+        margin: 2rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small Mobile: Simplify further */
+    .nav-links {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    .profile-pic {
+        width: 70%;
+    }
+    .about-details-container p,
+    .section-text p {
+        font-size: 1rem;
+    }
+    .btn-container .btn {
+        padding: 0.7rem;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
     #desktop-nav{
         display: none;
     }

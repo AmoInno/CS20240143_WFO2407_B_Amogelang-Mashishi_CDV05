@@ -8,7 +8,7 @@
     --primary-shadow: 5px 5px 5px -2px rgba(69,69,69,0.68);
     --secondary-gradient: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
 }
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 body{
@@ -31,11 +31,12 @@ a, .btn{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 11vh;
     position: fixed;  
     top: 0;
     width: 100%;
     z-index: 1000;
+    background: white;
 }
 
 nav, .nav-links{
@@ -233,23 +234,9 @@ section{
     cursor: pointer;
 }
 
-
-/* FOOTER */
-
 .icon{
     width: 50px;
     height: 50px;
-}
-
-#socials-container{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-    background: var(--secondary-gradient);
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 0;
 }
 
 /* ABOUT SECTION */
@@ -273,3 +260,69 @@ section{
 
 /* PROJECTS SECTION */
 
+.projects-pic{
+    width: 320px;
+    height: 320px;
+}
+
+.project-title{
+    padding-top: 20vh;
+    text-align: center;
+}
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+    gap: 15px;
+    height: 85vh;  
+    min-height: fit-content;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0;
+}
+
+.project-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid white;
+    width: 350px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px -2px rgba(69,69,69,0.68),
+    var(--primary-shadow);
+}
+
+.projects-pic:hover{
+    opacity: 0.5;
+}
+
+/* CONTACT ME SECTION */
+
+.contact-me-container{
+    margin: 8rem;
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+#contact{
+    padding-top: 3vh;
+    text-align: center;
+}
+
+.contact-icon{
+    padding-bottom: 10px;
+}
+
+.email{
+    text-align: center;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.linked-in{
+    margin-right: 3rem;
+}
