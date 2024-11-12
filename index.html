@@ -9,10 +9,12 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">AI Mashishi</div>
+        <div class="logo">
+            <a href="index.html">AI Mashishi</a>
+        </div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -27,7 +29,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
-             <li><a href="#about" onclick="toggleMenu()">About</a></li>
+             <li><a href="about.html" onclick="toggleMenu()">About</a></li>
              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -35,17 +37,31 @@
     </nav>
     <section id="profile">
         <div class="profile-pic-container">
-            <img src="./assests/pro-pic2.jpg" alt="Amogelang Mashishi profile picture">
+            <img src="./assests/pro-pic2.jpg" alt="Amogelang Mashishi profile picture" class="profile-pic">
         </div>
         <div class="section-text">
             <p class="greeting">Hello, I'm</p>
             <h1 class="title">Amogelang Mashishi</h1>
             <p class="job-title">Frontend developer</p>
-            <div class="btn">
+            <div class="btn-container">
                 <button class="btn btn-btn" onclick="window.open('https://docs.google.com/document/d/1XCmgX4wsN_3wOKWyqbe4kUR4Pn_V5uxM/edit?usp=sharing&ouid=110655999090265708188&rtpof=true&sd=true')">View CV</button>
+                <a href="#contact">
+                    <button class="btn contact-btn">Get in touch</button>
+                </a>
             </div>
         </div>
     </section>
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+    </section>
+    <footer id="socials-container">
+        <a href="https://www.linkedin.com/in/amogelang-mashishi/">
+            <img src="./assests/104493_linkedin_icon.png" alt="linkedIn profile" class="icon">
+        </a>
+        <a href="https://github.com/AmoInno">
+            <img src="./assests/211904_social_github_icon.png" alt="gitHub profile" class="icon">
+        </a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

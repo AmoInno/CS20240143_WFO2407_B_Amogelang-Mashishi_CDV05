@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+:root{
+    --primary-gradient: linear-gradient(to bottom, #dda15e 0%,  #faedcd 100%);
+    --primary-shadow: 5px 5px 5px -2px rgba(69,69,69,0.68);
+    --secondary-gradient: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+}
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 body{
@@ -21,15 +27,19 @@ a, .btn{
 
 /* DESKTOP NAV */
 
-nav, .nav-links{
+#desktop-nav{
     display: flex;
-}
-
-nav{
-
     justify-content: space-around;
     align-items: center;
     height: 15vh;
+    position: fixed;  
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav, .nav-links{
+    display: flex;
 }
 
 .nav-links{
@@ -55,6 +65,8 @@ a:hover{
 
 .logo:hover{
     cursor: default;
+    background: var(--secondary-gradient);
+    padding: 1rem;
 }
 
 /* HAMBURGER MENU */
@@ -128,4 +140,136 @@ a:hover{
    position: absolute;
    top: 10px;
 }
+
+/* PROFILE SECTION */
+
+section{
+    padding-top: 20vh;
+    height: 85vh;  
+    min-height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 0;
+    
+}
+
+.profile-pic{
+    width: 450px;
+    height: auto;
+    border-radius: 50%;
+    max-height: 70vh;
+    object-fit: cover;
+    box-shadow: var(--primary-shadow);
+}
+
+.section-text{
+    text-align: center;
+    align-self: center;
+}
+
+.section-text p{
+    font-weight: 600;
+}
+
+.greeting{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(118, 118, 118);
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.job-title{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    color: rgb(82, 82, 82);
+}
+ 
+/* PROFILE BUTTONS */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 8rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+.btn-btn{
+    background: black;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.btn-btn:hover{
+    background: var(--primary-gradient);
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact-btn{
+    background: var(--primary-gradient);
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.contact-btn:hover{
+    background: black;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: var(--secondary-gradient);
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+/* ABOUT SECTION */
+
+.about-pic{
+    width: 400px;
+    height: 450px;
+    margin-left: 8rem;
+    border-radius: 2rem;
+    box-shadow: var(--primary-shadow);
+}
+
+.profile-pic-container,
+.about-details-container{
+ align-self: center;
+}
+
+.about-details-container{
+    margin-right: 8rem;
+}
+
+/* PROJECTS SECTION */
 
