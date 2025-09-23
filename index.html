@@ -67,16 +67,21 @@
         <p class="greeting">Hello, I'm</p>
         <h1 class="title">Amogelang Mashishi</h1>
         <p class="job-title">Frontend developer</p>
-        <div class="btn-container mt-5">
+        <div
+          class="btn-container d-flex flex-column align-items-center flex-md-row justify-content-center gap-3 gap-md-5"
+        >
           <button
-            class="btn custom-btn"
+            class="btn custom-btn w-50 fs-md-5"
             onclick="window.open('https://docs.google.com/document/d/1XCmgX4wsN_3wOKWyqbe4kUR4Pn_V5uxM/edit?usp=sharing&ouid=110655999090265708188&rtpof=true&sd=true')"
           >
             View CV
           </button>
-          <a href="#contact">
-            <button class="btn contact-btn custom-btn">Get in touch</button>
-          </a>
+          <button
+            class="btn custom-btn w-50"
+            onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})"
+          >
+            Get in touch
+          </button>
         </div>
       </div>
     </section>

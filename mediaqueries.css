@@ -1,56 +1,45 @@
-/* Base Styling for smaller screens */
 * {
   box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-  section img.profile-pic {
-    max-width: 65%;
-  }
-}
-@media (min-width: 1200px) {
-  section img.profile-pic {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 1200px) {
-  /* Tablet: Reduce font sizes and adjust layout */
-  .logo {
-    font-size: 1.5rem;
-  }
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
   .nav-links {
-    font-size: 1.2rem;
-    gap: 1.5rem;
+    gap: 1rem;
+    font-size: 1rem;
   }
 
-  .about-pic {
-    max-width: 400px;
+  .about-details-container p {
+    font-size: 1rem;
   }
-  .projects-container {
-    gap: 10px;
-  }
-  .project-img-container {
-    width: 300px;
+
+  .btn-container .btn {
+    padding: 0.7rem;
   }
 }
 
-@media (max-width: 768px) {
-  /* Mobile: Stack items vertically, reduce spacing */
+/* Medium Screens (≤768px) */
+@media (min-width: 768px) {
+  /* Navigation */
   #desktop-nav {
-    display: none; /* Hide desktop nav */
+    display: none;
   }
   #hamburger-nav {
-    display: block; /* Show hamburger menu */
+    display: block;
   }
 
   /* Profile Section */
   .section-text h1.title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .section-text .greeting,
   .section-text .job-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+  }
+
+  .btn.custom-btn {
+    padding: 15px 0;
+    font-size: 1.2rem;
   }
 
   /* About Section */
@@ -74,29 +63,93 @@
   }
 }
 
-@media (max-width: 480px) {
-  /* Small Mobile: Simplify further */
+/* Large Screens (≤1200px) */
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
   .nav-links {
-    gap: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    gap: 1.5rem;
   }
 
-  .about-details-container p,
-  .section-text p {
-    font-size: 1rem;
+  .about-pic {
+    max-width: 400px;
   }
-  .btn-container .btn {
-    padding: 0.7rem;
-    width: 100%;
-  }
-}
 
-@media screen and (max-width: 1200px) {
+  .projects-container {
+    gap: 10px;
+  }
+
+  .project-img-container {
+    width: 300px;
+  }
+
+  /* Nav toggle for large screens */
   #desktop-nav {
     display: none;
   }
-
   #hamburger-nav {
     display: flex;
+  }
+}
+
+/* ===== Min-width Queries (Enhancements for Bigger Screens) ===== */
+
+/* Medium+ (≥768px) */
+@media (min-width: 768px) {
+  section img.profile-pic {
+    max-width: 65%;
+  }
+}
+
+@media (min-width: 1000px) {
+  section img.profile-pic {
+    max-width: 350px;
+  }
+  .section-text h1.title {
+    font-size: 3rem;
+  }
+  .section-text .job-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
+  section img.profile-pic {
+    max-width: 500px;
+  }
+
+  .section-text .greeting,
+  .section-text .job-title {
+    font-size: 3rem;
+  }
+
+  .section-text h1.title {
+    font-size: 4rem;
+  }
+}
+
+/* Extra-extra Large (≥1550p0x) */
+@media (min-width: 1550px) {
+  section img.profile-pic {
+    max-width: 750px;
+  }
+
+  .section-text .greeting,
+  .section-text .job-title {
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
+
+  .section-text h1.title {
+    font-size: 5rem;
+    letter-spacing: 5px;
+  }
+  .btn.custom-btn {
+    padding: 30px 0;
+    font-size: 2.5rem;
   }
 }
