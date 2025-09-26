@@ -190,28 +190,19 @@ img.profile-pic {
 #projects {
   background: var(--secondary-gradient);
 }
-.projects-pic {
-  width: 320px;
-  height: 320px;
-}
 
 .project-title {
   color: #212529;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 4px;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 3rem;
 }
 
 .projects-container {
-  display: flex;
   flex-wrap: wrap;
-  height: 70vh;
-  min-height: fit-content;
-  box-sizing: border-box;
-  justify-content: space-evenly;
   padding-bottom: 3rem;
 }
 
@@ -220,23 +211,24 @@ img.profile-pic {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
+  width: 100%;
+  max-width: 280px;
+  height: 350px;
   justify-content: space-evenly;
   border-radius: 10px;
   transition: transform 0.3s ease;
   box-shadow: -5px -5px 5px -2px rgba(69, 69, 69, 0.68), var(--primary-shadow);
+  padding: 1rem;
+}
+
+.projects-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .projects-pic:hover {
   opacity: 0.5;
-}
-
-button.btn.btn-btn {
-  background: #212529;
-  color: white;
-  padding: 12px;
-  font-weight: 500;
-  transition: transform 0.3s ease;
 }
 
 /* CONTACT ME SECTION */
