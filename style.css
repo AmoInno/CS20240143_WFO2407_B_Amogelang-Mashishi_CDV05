@@ -89,6 +89,25 @@ section {
 img.profile-pic {
   max-width: 80%;
   box-shadow: var(--primary-shadow);
+  opacity: 0;
+  transform: translateX(-30%);
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+/* SlideIn animation with glow */
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+    box-shadow: 0 0 0 rgba(180, 100, 255, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(180, 100, 255, 0.5);
+  }
 }
 
 .section-text {
@@ -106,7 +125,7 @@ img.profile-pic {
   color: rgb(118, 118, 118);
 }
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Playfair Display", serif;
   font-weight: 600;
   letter-spacing: 3px;
@@ -118,6 +137,40 @@ img.profile-pic {
   color: rgb(82, 82, 82);
 }
 
+.line {
+  opacity: 0;
+  display: inline-block;
+  transform: scale(0.5);
+  animation: popIn 0.6s ease-out forwards;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.line1 {
+  animation-delay: 1.5s;
+}
+.line2 {
+  animation-delay: 1.8s;
+}
+.line3 {
+  animation-delay: 2.1s;
+}
+.line4 {
+  animation-delay: 2.5s;
+}
+.line5 {
+  animation-delay: 2.8s;
+}
 /* PROFILE BUTTONS */
 
 .btn {
@@ -147,17 +200,13 @@ img.profile-pic {
 }
 
 .icon {
-  width: 80px;
+  width: 60px;
   height: 80px;
   margin-bottom: 8px;
 }
 
 .icon-color {
   filter: invert(1);
-}
-
-.last-icon {
-  margin-left: 5rem;
 }
 
 /* ABOUT SECTION */
@@ -235,7 +284,6 @@ img.profile-pic {
 .contact-me-container {
   position: relative;
   margin: 2rem;
-  padding: 2rem;
   color: white;
 }
 
@@ -258,11 +306,6 @@ img.profile-pic {
 
 .email {
   text-align: center;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .contact-info-container {

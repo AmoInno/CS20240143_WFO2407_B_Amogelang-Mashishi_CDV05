@@ -20,6 +20,10 @@
   .project-title {
     font-size: 2.5rem;
   }
+
+  .title {
+    font-size: 2.2rem;
+  }
 }
 
 /* Medium Screens (≤768px) */
@@ -105,6 +109,10 @@
   section img.profile-pic {
     max-width: 65%;
   }
+
+  .last-icon {
+    margin-left: 3rem;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -127,7 +135,9 @@
     max-width: 400px;
     height: 520px;
   }
-
+  .profile-pic-container {
+    margin-left: 4rem;
+  }
   .projects-pic {
     margin-bottom: 0.5rem;
   }
@@ -138,6 +148,10 @@
 
   div.projects-container {
     gap: 5rem !important;
+  }
+
+  .icon {
+    width: 80px;
   }
 }
 
@@ -164,6 +178,10 @@
 
   button.btn.btn-dark {
     font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
   }
 }
 
@@ -209,5 +227,13 @@
 
   div.projects-container {
     gap: 10rem !important;
+  }
+
+  .icon {
+    width: 10rem;
+  }
+
+  .title {
+    font-size: 6rem;
   }
 }

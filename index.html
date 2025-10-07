@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PORTFOLIO WEBSITE</title>
+    <title>AI Mashishi-Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link
@@ -56,7 +56,7 @@
       id="profile"
       class="d-flex flex-column flex-lg-row justify-content-evenly align-items-center gap-4"
     >
-      <div class="mt-5">
+      <div class="mt-5 profile-pic-container">
         <img
           src="./assests/pro-pic2.jpg"
           alt="Amogelang Mashishi profile picture"
@@ -64,20 +64,20 @@
         />
       </div>
       <div class="section-text">
-        <p class="greeting">Hello, I'm</p>
-        <h1 class="title">Amogelang Mashishi</h1>
-        <p class="job-title">Frontend developer</p>
+        <p class="greeting line line1">Hello, I'm</p>
+        <h1 class="title line line2">Amogelang Mashishi</h1>
+        <p class="job-title line line3">Frontend developer</p>
         <div
-          class="btn-container d-flex flex-column align-items-center flex-md-row justify-content-center gap-3 gap-md-5"
+          class="btn-container d-flex flex-column align-items-center flex-md-row justify-content-center gap-3 gap-md-5 mx-md-5"
         >
           <button
-            class="btn custom-btn w-50 fs-md-5"
+            class="btn custom-btn w-50 fs-md-5 line line4"
             onclick="window.open('https://docs.google.com/document/d/1XCmgX4wsN_3wOKWyqbe4kUR4Pn_V5uxM/edit?usp=sharing&ouid=110655999090265708188&rtpof=true&sd=true')"
           >
             View CV
           </button>
           <button
-            class="btn custom-btn w-50"
+            class="btn custom-btn w-50 line line5"
             onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})"
           >
             Get in touch
@@ -147,7 +147,9 @@
         <h3 class="title email">Contact Me</h3>
       </div>
       <div id="contact">
-        <div class="contact-info-upper-container">
+        <div
+          class="contact-info-upper-container d-flex flex-column flex-md-row align-items-center justify-content-md-evenly gap-3"
+        >
           <div class="contact-info-container">
             <a href="mailto:amogelangmashishi12@gmail.com" target="_blank">
               <img
